@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akein | Athlete, Tech Maniac & Motorsport Enthusiast</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --accent-color: #38bdf8;
+            --accent-secondary: #f43f5e;
+            --text-secondary: #94a3b8;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            color: var(--accent-color);
+        }
+        .tagline {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+        }
+        .section {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            border-left: 4px solid var(--accent-color);
+        }
+        .section.motorsport {
+            border-left-color: var(--accent-secondary);
+        }
+        h2 {
+            font-size: 1.5rem;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 8px;
+            margin-top: 0;
+            color: var(--accent-color);
+        }
+        .motorsport h2 {
+            color: var(--accent-secondary);
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+        .socials {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1.1rem;
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 12px;
+        }
+        .socials a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .socials a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Akein</h1>
+            <p class="tagline">15-Year-Old Multi-Sport Athlete, Tech Maniac & Motorsport Enthusiast | Colombo, Sri Lanka</p>
+        </header>
+
+        <div class="section">
+            <h2>About Me</h2>
+            <p>Student and athlete representing St. Peter's College in Colombo. Balancing competitive sprinting, long jumps, rugby, and karting alongside an extensive personal tech hardware lab, server setups, and high-performance automotive culture.</p>
+        </div>
+
+        <div class="grid-2">
+            <div class="section">
+                <h2>Athletics & Sports</h2>
+                <ul>
+                    <li><strong>Track & Field:</strong> 100m & 200m sprinter, long jumper for St. Peter's College. 17 medals earned.</li>
+                    <li><strong>Footwear:</strong> Nike Maxfly 2 (sprinting) and Health Jump 2 - green (long jump).</li>
+                    <li><strong>Accolades:</strong> Peterite Colours Night Merit in Athletics (2025).</li>
+                    <li><strong>Rugby:</strong> Former Under-16 7-A-Side Inter-House Rugby Tournament Cup Champion.</li>
+                </ul>
+            </div>
+
+            <div class="section motorsport">
+                <h2>Motorsport & Racing</h2>
+                <ul>
+                    <li><strong>Karting:</strong> Competitive rookie kart driver at SpeedBay Circuit (Port City).</li>
+                    <li><strong>Championships:</strong> Top-5 finish in the Junior division of the SpeedStar Championship with national media coverage.</li>
+                    <li><strong>Interests:</strong> Formula 1, Koenigsegg, Bugatti, Ferrari, Porsche, and high-performance automotive tuning.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Tech Stack & Hardware Command Center</h2>
+            <ul>
+                <li><strong>Laptops & Servers (3 Units):</strong> 
+                    <ul>
+                        <li><em>MSI Thin 15:</em> Intel Core i5 13th Gen, 32GB DDR4 3600MHz RAM, NVIDIA RTX 2050, 2TB Storage (Custom upgraded via hands-on teardowns).</li>
+                        <li><em>HP EliteBook 840 G6:</em> Primary daily driver.</li>
+                        <li><em>HP EliteBook 840 G4:</em> Dedicated home lab server.</li>
+                    </ul>
+                </li>
+                <li><strong>Smartphone Ecosystem (7 Units):</strong> Samsung Galaxy M10, Samsung Galaxy A05, two Samsung Galaxy A06s, Honor X7b, Vivo X200, and Vivo Y12s.</li>
+                <li><strong>Aerial & FPV Gear:</strong> DJI Avata and custom FPV drone setup.</li>
+                <li><strong>Battlestation:</strong> Triple-screen security monitoring hub, custom RGB/ambient purple-pink lighting, and high-output audio setup.</li>
+            </ul>
+        </div>
+
+        <div class="socials">
+            <p>Instagram / Motorsports: <a href="https://instagram.com/addicted_to_cars4125" target="_blank">@addicted_to_cars4125</a></p>
+        </div>
+    </div>
+</body>
+</html>

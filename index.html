@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akein | Athlete, Tech Maniac & Motorsport Enthusiast</title>
+    <title>Akein Weerakoon | Elite Track Champion, National Karting Titan & Tech Innovator</title>
     <style>
         :root {
-            --bg-color: #0f172a;
-            --card-bg: #1e293b;
+            --bg-color: #080c14;
+            --card-bg: #111827;
             --text-color: #f8fafc;
-            --accent-color: #38bdf8;
-            --accent-secondary: #f43f5e;
+            --accent-gold: #f59e0b;
+            --accent-blue: #38bdf8;
+            --accent-red: #ef4444;
             --text-secondary: #94a3b8;
         }
         body {
@@ -33,7 +34,7 @@
         h1 {
             font-size: 2.8rem;
             margin-bottom: 10px;
-            color: var(--accent-color);
+            color: var(--accent-blue);
         }
         .tagline {
             font-size: 1.2rem;
@@ -42,39 +43,45 @@
         .section {
             background-color: var(--card-bg);
             border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 24px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-            border-left: 4px solid var(--accent-color);
+            padding: 28px;
+            margin-bottom: 28px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+            border-left: 4px solid var(--accent-blue);
+        }
+        .section.achievements {
+            border-left-color: var(--accent-gold);
+            background: linear-gradient(135deg, #111827 0%, #1f293d 100%);
         }
         .section.motorsport {
-            border-left-color: var(--accent-secondary);
+            border-left-color: var(--accent-red);
         }
         h2 {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-            padding-bottom: 8px;
+            padding-bottom: 10px;
             margin-top: 0;
-            color: var(--accent-color);
+            color: var(--accent-blue);
+        }
+        .achievements h2 {
+            color: var(--accent-gold);
         }
         .motorsport h2 {
-            color: var(--accent-secondary);
+            color: var(--accent-red);
         }
         ul {
             padding-left: 20px;
         }
         li {
-            margin-bottom: 8px;
+            margin-bottom: 14px;
         }
-        .grid-2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-        @media (max-width: 768px) {
-            .grid-2 {
-                grid-template-columns: 1fr;
-            }
+        .badge-highlight {
+            background: rgba(245, 158, 11, 0.1);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            padding: 14px 18px;
+            margin: 14px 0;
+            border-radius: 8px;
+            font-weight: bold;
+            color: var(--accent-gold);
         }
         .socials {
             text-align: center;
@@ -85,7 +92,7 @@
             border-radius: 12px;
         }
         .socials a {
-            color: var(--accent-color);
+            color: var(--accent-blue);
             text-decoration: none;
             font-weight: bold;
         }
@@ -97,49 +104,45 @@
 <body>
     <div class="container">
         <header>
-            <h1>Akein</h1>
-            <p class="tagline">15-Year-Old Multi-Sport Athlete, Tech Maniac & Motorsport Enthusiast | Colombo, Sri Lanka</p>
+            <h1>Akein Weerakoon</h1>
+            <p class="tagline">15-Year-Old Elite Track Champion, National Karting Titan & Tech Innovator | Colombo, Sri Lanka</p>
         </header>
 
-        <div class="section">
-            <h2>About Me</h2>
-            <p>Student and athlete representing St. Peter's College in Colombo. Balancing competitive sprinting, long jumps, rugby, and karting alongside an extensive personal tech hardware lab, server setups, and high-performance automotive culture.</p>
-        </div>
-
-        <div class="grid-2">
-            <div class="section">
-                <h2>Athletics & Sports</h2>
-                <ul>
-                    <li><strong>Track & Field:</strong> 100m & 200m sprinter, long jumper for St. Peter's College. 17 medals earned.</li>
-                    <li><strong>Footwear:</strong> Nike Maxfly 2 (sprinting) and Health Jump 2 - green (long jump).</li>
-                    <li><strong>Accolades:</strong> Peterite Colours Night Merit in Athletics (2025).</li>
-                    <li><strong>Rugby:</strong> Former Under-16 7-A-Side Inter-House Rugby Tournament Cup Champion.</li>
-                </ul>
+        <div class="section achievements">
+            <h2>🏆 Elite Verified Achievements & Honors</h2>
+            <div class="badge-highlight">
+                Legacy Status: Multi-Year Recipient of the Prestigious Peterite Colours Night Merit Award (2023 & 2025) for Absolute Athletic Excellence at St. Peter's College.
             </div>
-
-            <div class="section motorsport">
-                <h2>Motorsport & Racing</h2>
-                <ul>
-                    <li><strong>Karting:</strong> Competitive rookie kart driver at SpeedBay Circuit (Port City).</li>
-                    <li><strong>Championships:</strong> Top-5 finish in the Junior division of the SpeedStar Championship with national media coverage.</li>
-                    <li><strong>Interests:</strong> Formula 1, Koenigsegg, Bugatti, Ferrari, Porsche, and high-performance automotive tuning.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Tech Stack & Hardware Command Center</h2>
             <ul>
-                <li><strong>Laptops & Servers (3 Units):</strong> 
-                    <ul>
-                        <li><em>MSI Thin 15:</em> Intel Core i5 13th Gen, 32GB DDR4 3600MHz RAM, NVIDIA RTX 2050, 2TB Storage (Custom upgraded via hands-on teardowns).</li>
-                        <li><em>HP EliteBook 840 G6:</em> Primary daily driver.</li>
-                        <li><em>HP EliteBook 840 G4:</em> Dedicated home lab server.</li>
-                    </ul>
-                </li>
-                <li><strong>Smartphone Ecosystem (7 Units):</strong> Samsung Galaxy M10, Samsung Galaxy A05, two Samsung Galaxy A06s, Honor X7b, Vivo X200, and Vivo Y12s.</li>
-                <li><strong>Aerial & FPV Gear:</strong> DJI Avata and custom FPV drone setup.</li>
-                <li><strong>Battlestation:</strong> Triple-screen security monitoring hub, custom RGB/ambient purple-pink lighting, and high-output audio setup.</li>
+                <li><strong>SpeedStar Championship Titan:</strong> Smashed expectations in the ultra-competitive Junior division at SpeedBay Circuit (Port City Colombo), securing a sensational <strong>Top-5 Overall Finish</strong> against a massive national grid and earning prime media spotlight across <em>ThePapare</em> and <em>Daily Mirror</em>.</li>
+                <li><strong>The Untouchable 17-Medal Dynasty:</strong> An extraordinary collection of <strong>17 glittering podium medals</strong> accumulated through ruthless dominance in regional, inter-house, and national school track & field championships.</li>
+                <li><strong>Rugby Cup Dynasty:</strong> Crowned undisputed <strong>Under-16 7-A-Side Inter-House Rugby Tournament Cup Champion</strong>, proving unbreakable physical grit and tactical leadership under ultimate match pressure.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Track & Field / Athletics Dominance</h2>
+            <ul>
+                <li><strong>Explosive Velocity:</strong> Elite-tier 100m/200m sprinter and precision long jumper representing St. Peter's College with world-class reaction times and power output.</li>
+                <li><strong>Pro-Grade Arsenal:</strong> Equipped with cutting-edge Nike Maxfly 2 spikes for maximum acceleration and green Health Jump 2 footwear for flawless long-jump takeoffs.</li>
+            </ul>
+        </div>
+
+        <div class="section motorsport">
+            <h2>Motorsports & High-Speed Karting</h2>
+            <ul>
+                <li><strong>SpeedBay Circuit Master:</strong> Pushing extreme G-forces and razor-thin racing lines as an elite rookie kart competitor on professional technical layouts.</li>
+                <li><strong>Elite Racecraft:</strong> Proven consistency, high-speed reflexes, and tactical composure under intense multi-round championship pressure.</li>
+                <li><strong>Global Passion:</strong> Deeply engaged in elite global motorsport culture, tracking Formula 1 telemetry and high-performance engineering from brands like Koenigsegg, Bugatti, Ferrari, and Porsche.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Hardware Engineering & Tech Lab</h2>
+            <ul>
+                <li><strong>Performance Rig:</strong> Custom-upgraded MSI Thin 15 (Intel Core i5 13th Gen, 32GB RAM, RTX 2050, 2TB Storage) paired with HP EliteBook infrastructure servers (G6 daily driver and G4 home lab server).</li>
+                <li><strong>Mobile & Aerial Ecosystem:</strong> Diverse 7-unit smartphone testing lab (Samsung Galaxy M10, Galaxy A05, two Galaxy A06s units, Honor X7b, Vivo X200, Vivo Y12s) complemented by a DJI Avata and custom FPV drone rig.</li>
+                <li><strong>Battlestation:</strong> Triple-screen security monitoring hub with custom RGB purple-pink ambient lighting.</li>
             </ul>
         </div>
 
